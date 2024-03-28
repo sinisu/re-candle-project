@@ -8,9 +8,8 @@ const Navbar = () => {
     const menuList = ['CANDLE','ACCESSORIES','DIFFUSER','PERFUME','FABRIC',]
 
     const navigate = useNavigate();
-    const getLogin = () => {
-        navigate('/login')
-    }
+    const getLogin = () => {navigate('/login')}
+    const goToHome = () => {navigate('/')}
 
     return (
         <div>
@@ -28,6 +27,7 @@ const Navbar = () => {
                 <img
                 src='https://cdn.imweb.me/thumbnail/20201212/9ff64542142a4.png'
                 width={180}
+                onClick={goToHome}
                 />
             </div>
             <div className='menu-area main-border'>

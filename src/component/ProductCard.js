@@ -13,7 +13,7 @@ const ProductCard = ({item}) => {
         <img src={item?.img}/>
       </div>
       <div className='item-text-box'>
-        <div>{item?.title}</div>
+        <div className='item-text-font'>{item?.title}</div>
         <div>{item?.price}원</div>
         <div className='best-item'>{item?.choice===true?"BEST":""}</div>
         <div className='best-item'>{item?.new===true?"NEW":""}</div>

@@ -1,3 +1,7 @@
+body {
+  background-color: rgb(248, 246, 238);
+}
+
 .background {
   /* background-color: #003da5; */
   background-color: rgb(248, 246, 238);
@@ -22,6 +26,7 @@
   display: flex;
   align-items: center;
   padding: 0rem 0.5rem;
+  cursor: pointer;
 }
 
 .login-box div{
@@ -54,14 +59,17 @@
   border: 0;
 }
 
-
 .logo-area{
   display: flex;
   justify-content: center;
-  padding: 1.5rem 0rem;
+  padding: 2rem 0rem;
 }
 
 .menu-area{
+  margin-bottom: 1rem;
+}
+
+.menu-item{
   display: flex;
   justify-content: space-around;
   list-style-type: none;
@@ -95,7 +103,13 @@
 
 .item-card img {
   width: 100%;
+  height: 100%;
   object-fit: cover;
+}
+
+.item-card img:hover{
+  scale: 1.08;
+  transition: 0.4s;
 }
 
 .item-img {
@@ -104,7 +118,7 @@
 }
 
 .item-text-box{
-  padding: 0.25rem;
+  padding: 0.3rem;
   color: #003da5;
   display: flex;
   flex-direction: column;
@@ -117,4 +131,107 @@
   font-size: 0.8rem;
   text-align: center;
   text-decoration: underline;
+}
+
+/* login page */
+
+.login-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 45vh;
+}
+
+.login-page-btn{
+  background-color: #003da5;
+  border: #003da5;
+  border-radius: 500px;
+  width: 100%;
+}
+
+.mini-logo{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin: 0rem 2rem 2rem 0rem;
+}
+
+.mini-logo img{
+  width: 3rem;
+}
+
+/* Product Detail */
+
+.product-detail{
+  display: flex;
+  justify-content: center;
+}
+
+.product-img{
+  display: flex;
+  justify-content: end;
+  border-radius: 1rem;
+  overflow: hidden;
+}
+
+.product-img img {
+  width: 100%;
+}
+
+.product-text-box{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 0.5rem 0rem 0rem 1rem;
+  font-size: 0.8rem;
+}
+
+.procuct-text-box-border {
+  padding-bottom: 1.5rem;
+}
+
+.option-box {
+  font-size: 0.8rem;
+  width: 65%;
+  margin-bottom: 0.5rem;
+}
+
+.option-box:focus {
+  box-shadow: none;
+  border-color: #003da5;
+}
+
+.buy-btn-box{
+  width: 65%;
+}
+
+.product-text-box button {
+  padding: 0.5rem 0rem;
+  border-radius: 500px;
+  margin: 0.2rem 0.1rem;
+}
+
+.buy-btn{
+  background-color: #003da5;
+  border: 2px solid #003da5;
+  width: 32%;
+  color: white;
+}
+
+.buy-btn-trans{
+  border: 2px solid #003da5;
+  width: 32%;
+  color: #003da5;
+}
+
+.naver-btn{
+  border: 2px solid rgb(44, 233, 91);
+  background-color: rgb(44, 233, 91);
+  width: 65%;
+}
+
+.kakao-btn {
+  border: 2px solid rgb(255, 217, 0);
+  background-color: rgb(255, 217, 0);
+  width: 65%;
 }

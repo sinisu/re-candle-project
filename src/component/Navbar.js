@@ -2,9 +2,15 @@ import React from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFaceSmile } from '@fortawesome/free-regular-svg-icons';
 import { faMagnifyingGlass } from '@fortawesome/free-solid-svg-icons'
+import { useNavigate } from 'react-router-dom';
 
 const Navbar = () => {
     const menuList = ['CANDLE','ACCESSORIES','DIFFUSER','PERFUME','FABRIC',]
+
+    const navigate = useNavigate();
+    const getLogin = () => {
+        navigate('/login')
+    }
 
     return (
         <div>
@@ -15,7 +21,7 @@ const Navbar = () => {
                 </div>
                 <div className='login-box'>
                     <FontAwesomeIcon icon={faFaceSmile} />
-                    <div>LOGIN</div> 
+                    <div onClick={getLogin}>LOGIN</div> 
                 </div>
             </div>
             <div className='logo-area main-border'>
@@ -24,8 +30,8 @@ const Navbar = () => {
                 width={180}
                 />
             </div>
-            <div className='main-border'>
-                <ul className='menu-area'>
+            <div className='menu-area main-border'>
+                <ul className='menu-item'>
                     {menuList.map((item)=>item===menuList[menuList.length-1]?(<li>{item}</li>):(<li className='menu-border'>{item}</li>))}
                 </ul>
             </div>

@@ -1,19 +1,41 @@
 import React, { useEffect, useState } from 'react'
 import ProductCard from '../component/ProductCard';
 import { Row, Col } from 'react-bootstrap';
+import { useSearchParams } from 'react-router-dom';
 
 const ProductAll = () => {
   const [productList,setProductList] = useState([]);
+  const [query,setQuery] = useSearchParams();
+
+  const getCategory = ( data,categoryId ) => {
+    data.map((item)=>{
+      console.log(data)
+      console.log(item.category)
+      if(item.category===categoryId) {
+        console.log(item.title)
+      } else {
+        console.log("없눈뎅")
+      }
+    })
+    console.log(categoryId);
+  }
+
   const getProducts = async() => {
-    let url = 'https://my-json-server.typicode.com/sinisu/shop-project/product';
+    let searchQuery = query.get("q") || "";
+    let categoryId = query.get("category") || "";
+    let url = `https://my-json-server.typicode.com/sinisu/shop-project/product?q=${searchQuery}`;
     let response = await fetch(url);
     let data = await response.json();
-    setProductList(data);
+    if (categoryId==="") {
+      setProductList(data);
+    } else {
+      getCategory(data,categoryId);
+    }
   }
 
   useEffect(()=>{
     getProducts();
-  },[])
+  },[query])
 
   return (
     <div>

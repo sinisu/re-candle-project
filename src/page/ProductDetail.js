@@ -20,10 +20,10 @@ const ProductDetail = () => {
   return (
     <Container>
       <Row className='product-detail'>
-        <Col className='product-img'>
+        <Col md={6} className='product-img'>
           <img src={product?.img} />
         </Col>
-        <Col className='product-text-box'>
+        <Col md={6} className='product-text-box'>
           <div>
             <div className='procuct-text-box-border'>
               <h2>{product?.title}</h2>
@@ -40,12 +40,12 @@ const ProductDetail = () => {
             </Form.Select>
           </div>
           
-          <div>
+          <div className='btn-area'>
             <div className='buy-btn-box'>
-            <button className='buy-btn'>구매하기</button>
-            <button className='buy-btn-trans'>선물하기</button>
+              <button className='buy-btn'>구매하기</button>
+              <button className='buy-btn-trans'>선물하기</button>
             <button className='buy-btn-trans'>장바구니</button>
-          </div>
+            </div>
             <button className='naver-btn'>네이버페이 구매하기</button>
             <button className='kakao-btn'>카카오페이 구매하기</button>
           </div>

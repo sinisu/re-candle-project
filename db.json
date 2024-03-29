@@ -7,7 +7,8 @@
             "price":9900,
             "choice":true,
             "new":false,
-            "size":["S","M","L"]
+            "size":["S","M","L"],
+            "category":"candle"
         },
         {
             "id":1,
@@ -16,7 +17,8 @@
             "price":9900,
             "choice":true,
             "new":false,
-            "size":["S","M","L"]
+            "size":["S","M","L"],
+            "category":"candle"
         },
         {
             "id":2,
@@ -25,7 +27,8 @@
             "price":9900,
             "choice":false,
             "new":false,
-            "size":["S","M","L"]
+            "size":["S","M","L"],
+            "category":"candle"
         },
         {
             "id":3,
@@ -34,7 +37,8 @@
             "price":9900,
             "choice":false,
             "new":true,
-            "size":["S","M","L"]
+            "size":["S","M","L"],
+            "category":"candle"
         },
         {
             "id":4,
@@ -43,7 +47,8 @@
             "price":24000,
             "choice":true,
             "new":false,
-            "size":["S","M","L"]
+            "size":["S","M","L"],
+            "category":"candle"
         },
         {
             "id":5,
@@ -52,7 +57,8 @@
             "price":24000,
             "choice":false,
             "new":false,
-            "size":["S","M","L"]
+            "size":["S","M","L"],
+            "category":"candle"
         },
         {
             "id":6,
@@ -61,7 +67,8 @@
             "price":24000,
             "choice":false,
             "new":false,
-            "size":["S","M","L"]
+            "size":["S","M","L"],
+            "category":"candle"
         },
         {
             "id":7,
@@ -70,7 +77,8 @@
             "price":24000,
             "choice":false,
             "new":false,
-            "size":["S","M","L"]
+            "size":["S","M","L"],
+            "category":"candle"
         },
         {
             "id":8,
@@ -79,7 +87,8 @@
             "price":38000,
             "choice":false,
             "new":false,
-            "size":["S","M","L"]
+            "size":["S","M","L"],
+            "category":"candle"
         },
         {
             "id":9,
@@ -88,7 +97,8 @@
             "price":38000,
             "choice":true,
             "new":false,
-            "size":["S","M","L"]
+            "size":["S","M","L"],
+            "category":"candle"
         },
         {
             "id":10,
@@ -97,7 +107,8 @@
             "price":40000,
             "choice":false,
             "new":false,
-            "size":["S","M","L"]
+            "size":["S","M","L"],
+            "category":"candle"
         },
         {
             "id":11,
@@ -106,7 +117,8 @@
             "price":38000,
             "choice":true,
             "new":false,
-            "size":["S","M","L"]
+            "size":["S","M","L"],
+            "category":"candle"
         },
         {
             "id":12,
@@ -115,7 +127,88 @@
             "price":10000,
             "choice":false,
             "new":false,
-            "size":["S","M","L"]
+            "size":["S","M","L"],
+            "category":"accessories"
+        },
+        {
+            "id":13,
+            "img":"https://cdn.imweb.me/thumbnail/20230524/db0273666d8bc.jpg",
+            "title":"BEAN SPROUT Matches 성냥",
+            "price":10000,
+            "choice":false,
+            "new":false,
+            "size":["S","M","L"],
+            "category":"accessories"
+        },
+        {
+            "id":14,
+            "img":"https://cdn.imweb.me/thumbnail/20230524/09f2c2e02977b.jpg",
+            "title":"Well-Matched Matches 성냥",
+            "price":10000,
+            "choice":false,
+            "new":false,
+            "size":["S","M","L"],
+            "category":"accessories"
+        },
+        {
+            "id":15,
+            "img":"https://cdn.imweb.me/thumbnail/20200427/81845eeab3451.jpg",
+            "title":"WICK TRIMMER & WICK DIPPER 캔들 가위와 불끄개",
+            "price":15000,
+            "choice":false,
+            "new":false,
+            "size":["S","M","L"],
+            "category":"accessories"
+        },
+        {
+            "id":16,
+            "img":"https://cdn.imweb.me/thumbnail/20220629/8b0d3df441aea.jpg",
+            "title":"DIFFUSER 100ML SET 디퓨저 세트",
+            "price":29000,
+            "choice":false,
+            "new":false,
+            "size":["S","M","L"],
+            "category":"diffusers"
+        },
+        {
+            "id":17,
+            "img":"https://cdn.imweb.me/thumbnail/20220629/e5812fec5af03.jpg",
+            "title":"DIFFUSER REFILL 250ML 디퓨저 리필",
+            "price":28000,
+            "choice":false,
+            "new":false,
+            "size":["S","M","L"],
+            "category":"diffusers"
+        },
+        {
+            "id":18,
+            "img":"https://cdn.imweb.me/thumbnail/20220707/ef00e4183dfe0.jpg",
+            "title":"SPACE PERFUME 공간향수 150ML",
+            "price":29000,
+            "choice":false,
+            "new":false,
+            "size":["S","M","L"],
+            "category":"perfume"
+        },
+        {
+            "id":19,
+            "img":"https://cdn.imweb.me/thumbnail/20200429/b3cce2c762eaa.jpg",
+            "title":"BRICK POUCH (NAVY) 와펜파우치 네이비",
+            "price":15000,
+            "choice":false,
+            "new":false,
+            "size":["S","M","L"],
+            "category":"fabric"
+        },
+        {
+            "id":20,
+            "img":"https://cdn.imweb.me/thumbnail/20200423/88712087edd57.jpg",
+            "title":"AVO POUCH (KHAKI GRAY) 와펜파우치 카키그레이",
+            "price":15000,
+            "choice":false,
+            "new":false,
+            "size":["S","M","L"],
+            "category":"fabric"
         }
     ]
 }

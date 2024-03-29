@@ -23,8 +23,12 @@ body {
 
 .login-area{
   display: flex;
-  justify-content: end;
+  justify-content: space-between;
   padding: 0.5rem 1rem;
+}
+
+.menu-burger{
+  padding-left: 0.5rem;
 }
 
 .login-box{
@@ -39,10 +43,14 @@ body {
 }
 
 .input-area{
+  display: flex;
+}
+
+.input-box{
   padding: 0rem 0.5rem;
 }
 
-.input-area input{
+.input-box input{
   background-color: transparent;
   border: none;
   width: 8.2rem;
@@ -51,17 +59,17 @@ body {
   font-weight: 600;
 }
 
-.input-area input:focus{
+.input-box input:focus{
   outline: none;
 }
 
-.input-area input::placeholder{
+.input-box input::placeholder{
   color: #003da5;
   font-weight: 600;
   font-size: 0.85rem;
 }
 
-.input-area input:focus{
+.input-box input:focus{
   border: 0;
 }
 
@@ -260,4 +268,30 @@ body {
   border: 2px solid rgb(255, 217, 0);
   background-color: rgb(255, 217, 0);
   width: 65%;
+}
+
+@media screen and (max-width: 60rem) {
+  .product-text-box{
+    align-items: center;
+  }
+
+  .btn-area{
+    width: 75%;
+  }
+
+  .buy-btn-box{
+    width: 100%;
+  }
+
+  .naver-btn{
+    width: 100%;
+  }  
+
+  .kakao-btn{
+    width: 100%;
+  }
+
+  .option-box{
+    width: 100%;
+  }
 }

@@ -138,6 +138,7 @@ body {
 .side-menu-item li {
   padding: 0.5rem 0rem;
   list-style-type: none;
+  cursor: pointer;
 }
 
 .text-minus{

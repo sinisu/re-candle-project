@@ -6,11 +6,13 @@ import { useParams } from 'react-router-dom';
 const ProductDetail = () => {
   let {id} = useParams();
   const [product,setProduct]=useState(null);
+  const [size,setSize]=useState([]);
   const getProductDetail = async () => {
     let url = `https://my-json-server.typicode.com/sinisu/shop-project/product/${id}`;
     let response = await fetch(url);
     let data = await response.json();
     setProduct(data)
+    setSize(data.size)
   };
 
   useEffect(()=>{
@@ -32,12 +34,11 @@ const ProductDetail = () => {
               <span className='text-bold'>배송방법 </span><span>택배</span><br/>
               <span className='text-bold'>배송비 </span><span>3,000원(50,000원 이상 무료배송) | 도서산간 배송비 추가</span>
             </div>
-            <Form.Select className='option-box'>
+            {size?<Form.Select className='option-box'>
               <option>사이즈를 골라주세요</option>
-              <option value="1">S [60g, 12h]</option>
-              <option value="2">M [220g, 45h]</option>
-              <option value="3">L [600g, 120h]</option>
-            </Form.Select>
+              {size.map((item)=>(<option>{item}</option>))}
+            </Form.Select>:''}
+            
           </div>
           
           <div className='btn-area'>

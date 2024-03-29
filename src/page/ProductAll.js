@@ -8,16 +8,14 @@ const ProductAll = () => {
   const [query,setQuery] = useSearchParams();
 
   const getCategory = ( data,categoryId ) => {
+    let categoryItem = [];
     data.map((item)=>{
-      console.log(data)
-      console.log(item.category)
       if(item.category===categoryId) {
-        console.log(item.title)
-      } else {
-        console.log("없눈뎅")
+        // setProductList(data[item.id])
+        categoryItem.push(data[item.id])
       }
-    })
-    console.log(categoryId);
+    });
+    setProductList(categoryItem)
   }
 
   const getProducts = async() => {

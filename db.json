@@ -7,7 +7,7 @@
             "price":9900,
             "choice":true,
             "new":false,
-            "size":["S","M","L"],
+            "size":["S [60g, 12h]","M [220g, 45h]",""],
             "category":"candle"
         },
         {
@@ -17,7 +17,7 @@
             "price":9900,
             "choice":true,
             "new":false,
-            "size":["S","M","L"],
+            "size":["S [60g, 12h]","M [220g, 45h]","L [600g, 120h]"],
             "category":"candle"
         },
         {
@@ -27,7 +27,7 @@
             "price":9900,
             "choice":false,
             "new":false,
-            "size":["S","M","L"],
+            "size":["S [60g, 12h]","M [220g, 45h]","L [600g, 120h]"],
             "category":"candle"
         },
         {
@@ -37,7 +37,7 @@
             "price":9900,
             "choice":false,
             "new":true,
-            "size":["S","M","L"],
+            "size":["S [60g, 12h]","M [220g, 45h]","L [600g, 120h]"],
             "category":"candle"
         },
         {
@@ -47,7 +47,7 @@
             "price":24000,
             "choice":true,
             "new":false,
-            "size":["S","M","L"],
+            "size":["S [60g, 12h]","M [220g, 45h]","L [600g, 120h]"],
             "category":"candle"
         },
         {
@@ -57,7 +57,7 @@
             "price":24000,
             "choice":false,
             "new":false,
-            "size":["S","M","L"],
+            "size":["S [60g, 12h]","M [220g, 45h]","L [600g, 120h]"],
             "category":"candle"
         },
         {
@@ -67,7 +67,7 @@
             "price":24000,
             "choice":false,
             "new":false,
-            "size":["S","M","L"],
+            "size":["S [60g, 12h]","M [220g, 45h]","L [600g, 120h]"],
             "category":"candle"
         },
         {
@@ -77,7 +77,7 @@
             "price":24000,
             "choice":false,
             "new":false,
-            "size":["S","M","L"],
+            "size":["S [60g, 12h]","M [220g, 45h]","L [600g, 120h]"],
             "category":"candle"
         },
         {
@@ -87,7 +87,7 @@
             "price":38000,
             "choice":false,
             "new":false,
-            "size":["S","M","L"],
+            "size":["S [60g, 12h]","M [220g, 45h]","L [600g, 120h]"],
             "category":"candle"
         },
         {
@@ -97,7 +97,7 @@
             "price":38000,
             "choice":true,
             "new":false,
-            "size":["S","M","L"],
+            "size":["S [60g, 12h]","M [220g, 45h]","L [600g, 120h]"],
             "category":"candle"
         },
         {
@@ -107,7 +107,7 @@
             "price":40000,
             "choice":false,
             "new":false,
-            "size":["S","M","L"],
+            "size":["S [60g, 12h]","M [220g, 45h]","L [600g, 120h]"],
             "category":"candle"
         },
         {
@@ -117,7 +117,7 @@
             "price":38000,
             "choice":true,
             "new":false,
-            "size":["S","M","L"],
+            "size":["S [60g, 12h]","M [220g, 45h]","L [600g, 120h]"],
             "category":"candle"
         },
         {
@@ -127,7 +127,7 @@
             "price":10000,
             "choice":false,
             "new":false,
-            "size":["S","M","L"],
+            "size":[],
             "category":"accessories"
         },
         {
@@ -137,7 +137,7 @@
             "price":10000,
             "choice":false,
             "new":false,
-            "size":["S","M","L"],
+            "size":[],
             "category":"accessories"
         },
         {
@@ -147,7 +147,7 @@
             "price":10000,
             "choice":false,
             "new":false,
-            "size":["S","M","L"],
+            "size":[],
             "category":"accessories"
         },
         {
@@ -157,7 +157,7 @@
             "price":15000,
             "choice":false,
             "new":false,
-            "size":["S","M","L"],
+            "size":[],
             "category":"accessories"
         },
         {
@@ -168,7 +168,7 @@
             "choice":false,
             "new":false,
             "size":["S","M","L"],
-            "category":"diffusers"
+            "category":"diffuser"
         },
         {
             "id":17,
@@ -178,7 +178,7 @@
             "choice":false,
             "new":false,
             "size":["S","M","L"],
-            "category":"diffusers"
+            "category":"diffuser"
         },
         {
             "id":18,

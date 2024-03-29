@@ -41,7 +41,7 @@ body {
 }
 
 .login-box div{
-  padding: 0rem 0.5rem;
+  padding-left:0.3rem;
 }
 
 .input-box{
@@ -52,7 +52,7 @@ body {
   background-color: transparent;
   border: none;
   width: 8.2rem;
-  margin-left: 0.5rem;
+  margin-left: 0.2rem;
   color: #003da5;
   font-weight: 600;
 }

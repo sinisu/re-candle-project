@@ -127,7 +127,7 @@
             "price":10000,
             "choice":false,
             "new":false,
-            "size":[],
+            
             "category":"accessories"
         },
         {
@@ -137,7 +137,7 @@
             "price":10000,
             "choice":false,
             "new":false,
-            "size":[],
+            
             "category":"accessories"
         },
         {
@@ -147,7 +147,7 @@
             "price":10000,
             "choice":false,
             "new":false,
-            "size":[],
+            
             "category":"accessories"
         },
         {
@@ -157,7 +157,7 @@
             "price":15000,
             "choice":false,
             "new":false,
-            "size":[],
+            
             "category":"accessories"
         },
         {
@@ -167,7 +167,13 @@
             "price":29000,
             "choice":false,
             "new":false,
-            "size":["S","M","L"],
+            "size":["WATER MOUNTAIN 워터마운틴",
+                    "CALL ME BY YOUR NAME 샌달우드",
+                    "FOUR SONGS 드라이 코튼",
+                    "NORDMANNS GRAN 소나무",
+                    "HERBALABOMB 허벌 로즈마리",
+                    "PLOWER 플라워 피치",
+                    "O LIVE OH LIVE 올리브"],
             "category":"diffuser"
         },
         {
@@ -177,7 +183,13 @@
             "price":28000,
             "choice":false,
             "new":false,
-            "size":["S","M","L"],
+            "size":["WATER MOUNTAIN 워터마운틴",
+                    "CALL ME BY YOUR NAME 샌달우드",
+                    "FOUR SONGS 드라이 코튼",
+                    "NORDMANNS GRAN 소나무",
+                    "HERBALABOMB 허벌 로즈마리",
+                    "PLOWER 플라워 피치",
+                    "O LIVE OH LIVE 올리브"],
             "category":"diffuser"
         },
         {

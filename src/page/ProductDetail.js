@@ -28,9 +28,9 @@ const ProductDetail = () => {
             <div className='procuct-text-box-border'>
               <h2>{product?.title}</h2>
               <h4>{product?.price}원</h4><br/>
-              <span>원산지 </span><span>KOREA</span><br/>
-              <span>배송방법 </span><span>택배</span><br/>
-              <span>배송비 </span><span>3,000원(50,000원 이상 무료배송) | 도서산간 배송비 추가</span>
+              <span className='text-bold'>원산지 </span><span>KOREA</span><br/>
+              <span className='text-bold'>배송방법 </span><span>택배</span><br/>
+              <span className='text-bold'>배송비 </span><span>3,000원(50,000원 이상 무료배송) | 도서산간 배송비 추가</span>
             </div>
             <Form.Select className='option-box'>
               <option>사이즈를 골라주세요</option>

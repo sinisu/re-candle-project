@@ -13,10 +13,10 @@ function App() {
 
   return (
     <div className='background'>
-      <Navbar />
+      <Navbar authenticate={authenticate} setAuthenticate={setAuthenticate}/>
       <Routes>
         <Route path='/' element={<ProductAll />} />
-        <Route path='/login' element={<Login setAuthenticate={setAuthenticate}/>} />
+        <Route path='/login' element={<Login authenticate={authenticate} setAuthenticate={setAuthenticate}/>} />
         <Route path='/product/:id' element={<PrivateRoute authenticate={authenticate}/>} />
       </Routes>
     </div>

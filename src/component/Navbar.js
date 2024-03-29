@@ -1,14 +1,20 @@
 import React, { useEffect, useState } from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFaceSmile } from '@fortawesome/free-regular-svg-icons';
-import { faBars, faMagnifyingGlass } from '@fortawesome/free-solid-svg-icons'
+import { faBars, faMagnifyingGlass, faMinus } from '@fortawesome/free-solid-svg-icons'
 import { useNavigate } from 'react-router-dom';
 
-const Navbar = () => {
+const Navbar = ({authenticate,setAuthenticate}) => {
     const menuList = ['CANDLE','ACCESSORIES','DIFFUSER','PERFUME','FABRIC',]
+    const [sideDisplay,setSideDisplay] = useState("none");
 
     const navigate = useNavigate();
-    const getLogin = () => {navigate('/login')}
+    const getLogin = () => {
+        if(authenticate===true){
+            setAuthenticate(false)
+        }
+        navigate('/login')
+    }
     const goToHome = () => {navigate('/')}
     const searchItem = (event) => {
         if (event.key === "Enter") {
@@ -20,11 +26,20 @@ const Navbar = () => {
         let category = event.target.textContent.toLowerCase();
         navigate(`/?category=${category}`)
     }
+    
 
     return (
         <div>
+            <div className='side-menu-item' style={{display:sideDisplay}}>
+                <div className='text-minus' onClick={()=>setSideDisplay("none")}>
+                    <FontAwesomeIcon icon={faMinus} />
+                </div>
+                <ul>
+                    {menuList.map((item)=>item===menuList[menuList.length-1]?(<li onClick={(event)=>getCategory(event)}>{item}</li>):(<li onClick={(event)=>getCategory(event)} className='menu-border'>{item}</li>))}
+                </ul>
+            </div>
             <div className='login-area main-border'>
-                <div className='menu-burger'>
+                <div className='menu-burger' onClick={()=>setSideDisplay("block")}>
                     <FontAwesomeIcon icon={faBars} />
                 </div>
                 <div className='input-area'>
@@ -38,7 +53,10 @@ const Navbar = () => {
                     </div>
                     <div className='login-box'>
                         <FontAwesomeIcon icon={faFaceSmile} />
-                        <div onClick={getLogin}>LOGIN</div> 
+                        {authenticate?(
+                        <div onClick={getLogin}>LOGOUT</div>)
+                        :(<div onClick={getLogin}>LOGIN</div>)}
+                         
                     </div>    
                 </div>  
             </div>

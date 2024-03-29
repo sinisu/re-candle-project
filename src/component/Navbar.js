@@ -34,30 +34,29 @@ const Navbar = ({authenticate,setAuthenticate}) => {
                 <div className='text-minus' onClick={()=>setSideDisplay("none")}>
                     <FontAwesomeIcon icon={faMinus} />
                 </div>
-                <ul>
-                    {menuList.map((item)=>item===menuList[menuList.length-1]?(<li onClick={(event)=>getCategory(event)}>{item}</li>):(<li onClick={(event)=>getCategory(event)} className='menu-border'>{item}</li>))}
-                </ul>
+                <div className='side-menu-list'>
+                    <ul>
+                        {menuList.map((item)=>item===menuList[menuList.length-1]?(<li onClick={(event)=>getCategory(event)}>{item}</li>):(<li onClick={(event)=>getCategory(event)} className='menu-border'>{item}</li>))}
+                    </ul>    
+                </div>
             </div>
             <div className='login-area main-border'>
                 <div className='menu-burger' onClick={()=>setSideDisplay("block")}>
                     <FontAwesomeIcon icon={faBars} />
                 </div>
-                <div className='input-area'>
-                    <div className='input-box'>
-                        <FontAwesomeIcon icon={faMagnifyingGlass} />
-                        <input 
-                            type='text' 
-                            placeholder='검색어를 입력하세요' 
-                            onKeyPress={(event)=>searchItem(event)}    
-                        />
-                    </div>
-                    <div className='login-box'>
-                        <FontAwesomeIcon icon={faFaceSmile} />
-                        {authenticate?(
-                        <div onClick={getLogin}>LOGOUT</div>)
-                        :(<div onClick={getLogin}>LOGIN</div>)}
-                         
-                    </div>    
+                <div className='input-box'>
+                    <FontAwesomeIcon icon={faMagnifyingGlass} />
+                    <input 
+                        type='text' 
+                        placeholder='검색어를 입력하세요' 
+                        onKeyPress={(event)=>searchItem(event)}    
+                    />
+                </div>
+                <div className='login-box'>
+                    <FontAwesomeIcon icon={faFaceSmile} />
+                    {authenticate?(
+                    <div onClick={getLogin}>LOGOUT</div>)
+                    :(<div onClick={getLogin}>LOGIN</div>)}
                 </div>  
             </div>
             <div className='logo-area main-border'>

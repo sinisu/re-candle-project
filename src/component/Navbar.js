@@ -23,6 +23,7 @@ const Navbar = ({authenticate,setAuthenticate}) => {
         }
     }
     const getCategory = (event) => {
+        setSideDisplay("none")
         let category = event.target.textContent.toLowerCase();
         navigate(`/?category=${category}`)
     }

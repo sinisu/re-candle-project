@@ -323,6 +323,7 @@ body {
     position: fixed;
     left: 1rem;
     display: block;
+    z-index: 2;
   }
 
   /* Product Detail */

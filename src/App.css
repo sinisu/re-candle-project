@@ -298,21 +298,27 @@ body {
   border: 2px solid rgb(44, 233, 91);
   background-color: rgb(44, 233, 91);
   width: 65%;
+  color: black;
 }
 
 .kakao-btn {
   border: 2px solid rgb(255, 217, 0);
   background-color: rgb(255, 217, 0);
   width: 65%;
+  color: black;
 }
 
 @media screen and (max-width: 60rem) {
   /* nav */
-  
   .login-area{
     display: flex;
     justify-content: end;
     padding: 0.5rem 1rem;
+  }
+
+  .input-box input {
+    margin: 0;
+    padding: 0;
   }
 
   .menu-area{
@@ -327,8 +333,13 @@ body {
   }
 
   /* Product Detail */
-  .product-text-box{align-items: center;}
-  .btn-area{width: 75%;}
+  .product-detail {margin-top: 1rem;}
+  .product-text-box {
+    align-items: center;
+    padding: 0.5rem;
+    width: 100%;
+  }
+  .btn-area{width: 100%;}
   .buy-btn-box{width: 100%;}
   .naver-btn{width: 100%;}  
   .kakao-btn{width: 100%;}

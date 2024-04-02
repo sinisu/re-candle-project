@@ -1,17 +1,20 @@
-import React, { useEffect, useState } from 'react'
+import React, { useState } from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFaceSmile } from '@fortawesome/free-regular-svg-icons';
 import { faBars, faMagnifyingGlass, faMinus } from '@fortawesome/free-solid-svg-icons'
 import { useNavigate } from 'react-router-dom';
+import { useDispatch, useSelector } from 'react-redux';
 
-const Navbar = ({authenticate,setAuthenticate}) => {
+const Navbar = () => {
+    const dispatch = useDispatch();
+    const authenticate = useSelector((state)=>state.auth.authenticate)
     const menuList = ['CANDLE','ACCESSORIES','DIFFUSER','PERFUME','FABRIC',]
     const [sideDisplay,setSideDisplay] = useState("none");
 
     const navigate = useNavigate();
     const getLogin = () => {
         if(authenticate===true){
-            setAuthenticate(false)
+            dispatch({type:"AUTH_FALSE"})
         }
         navigate('/login')
     }

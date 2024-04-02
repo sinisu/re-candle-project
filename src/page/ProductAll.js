@@ -7,30 +7,22 @@ import { productAction } from '../redux/actions/productAction';
 
 const ProductAll = () => {
   const productList = useSelector((state)=>state.product.productList)
+  const [resultList,setResultList] = useState([]);
   const [query,setQuery] = useSearchParams();
   const dispatch = useDispatch();
 
-  const getCategory = ( data,categoryId ) => {
+  const getCategory = (categoryId ) => {
     let categoryItem = [];
-    data.map((item)=>{
+    productList.map((item)=>{
       if(item.category===categoryId) {
-        categoryItem.push(data[item.id])
+        categoryItem.push(productList[item.id])
       }
     });
-    // setProductList(categoryItem)
+    setResultList(categoryItem)
   }
 
   const getProduct = () => {
     let searchQuery = query.get("q") || "";
-    let categoryId = query.get("category") || "";
-    // let url = `https://my-json-server.typicode.com/sinisu/shop-project/product?q=${searchQuery}`;
-    // let response = await fetch(url);
-    // let data = await response.json();
-    // if (categoryId==="") {
-    //   setProductList(data);
-    // } else {
-    //   getCategory(data,categoryId);
-    // }
     dispatch(productAction.getProducts(searchQuery))
   }
 
@@ -38,10 +30,20 @@ const ProductAll = () => {
     getProduct();
   },[query])
 
+  useEffect(()=>{
+    let categoryId = query.get("category") || "";
+    if (categoryId==="") {
+      setResultList(productList)
+    } else {
+      getCategory(categoryId)
+    }
+    
+  },[productList])
+
   return (
     <div>
       <Row>
-        {productList.map(item=>
+        {resultList.map(item=>
           (<Col lg={3}>
             <ProductCard item={item} />
           </Col>))}
